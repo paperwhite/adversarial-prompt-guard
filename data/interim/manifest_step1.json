@@ -1,0 +1,137 @@
+{
+  "attack_type_counts": {
+    "benign": 695,
+    "evasion": 3449,
+    "injection": 1603,
+    "poisoning_prompt": 58
+  },
+  "category_counts": {
+    "adversarial": 40,
+    "benign": 473,
+    "context_confusion": 1,
+    "contextual": 93,
+    "control": 1,
+    "copyright": 100,
+    "crescendo": 9,
+    "direct_injection": 1460,
+    "edge_case": 22,
+    "embedding_manipulation": 20,
+    "encoding": 20,
+    "encoding_obfuscation": 6,
+    "harmful_behavior": 520,
+    "harmful_string": 572,
+    "human_jailbreaks": 1999,
+    "indirect_injection": 38,
+    "instruction_override": 2,
+    "jailbreak": 155,
+    "many_shot": 5,
+    "persona_replacement": 10,
+    "prompt_disclosure": 23,
+    "prompt_injection": 3,
+    "response_manipulation": 4,
+    "standard": 200,
+    "system_extraction": 10,
+    "system_manipulation": 6,
+    "token_smuggling": 9,
+    "training_extraction": 4
+  },
+  "collected_at": "2026-08-04T17:44:07.493825+00:00",
+  "jsonl_path": "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/data/interim/adversarial_prompts_step1.jsonl",
+  "manifest_path": "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/data/interim/manifest_step1.json",
+  "pre_dedupe_records": 5832,
+  "registry_path": "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/configs/research_sources.json",
+  "sources": [
+    {
+      "notes": "",
+      "raw_files": [
+        "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/data/raw/advbench_harmful_behaviors/harmful_behaviors.csv"
+      ],
+      "records_written": 520,
+      "rows_seen": 520,
+      "source_id": "advbench_harmful_behaviors"
+    },
+    {
+      "notes": "",
+      "raw_files": [
+        "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/data/raw/advbench_harmful_strings/harmful_strings.csv"
+      ],
+      "records_written": 574,
+      "rows_seen": 574,
+      "source_id": "advbench_harmful_strings"
+    },
+    {
+      "notes": "",
+      "raw_files": [
+        "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/data/raw/harmbench_text_all/harmbench_behaviors_text_all.csv"
+      ],
+      "records_written": 400,
+      "rows_seen": 400,
+      "source_id": "harmbench_text_all"
+    },
+    {
+      "notes": "",
+      "raw_files": [
+        "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/data/raw/harmbench_human_jailbreaks/HumanJailbreaks__val.json",
+        "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/data/raw/harmbench_human_jailbreaks/HumanJailbreaks__test.json"
+      ],
+      "records_written": 2000,
+      "rows_seen": 2000,
+      "source_id": "harmbench_human_jailbreaks"
+    },
+    {
+      "notes": "core/train offset 2200: HTTP Error 429: Too Many Requests; core/validation offset 0: HTTP Error 429: Too Many Requests; core/test offset 0: HTTP Error 429: Too Many Requests",
+      "raw_files": [
+        "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/data/raw/neuralchemy_prompt_injection_core/core__train.json",
+        "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/data/raw/neuralchemy_prompt_injection_core/core__validation.json",
+        "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/data/raw/neuralchemy_prompt_injection_core/core__test.json"
+      ],
+      "records_written": 2200,
+      "rows_seen": 2200,
+      "source_id": "neuralchemy_prompt_injection_core"
+    },
+    {
+      "notes": "Markdown source saved raw; extracted fenced/list payload-like examples when present.",
+      "raw_files": [
+        "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/data/raw/owasp_aitg_prompt_injection/AITG-APP-01_Testing_for_Prompt_Injection.md"
+      ],
+      "records_written": 64,
+      "rows_seen": 64,
+      "source_id": "owasp_aitg_prompt_injection"
+    },
+    {
+      "notes": "Markdown source saved raw; extracted fenced/list payload-like examples when present.",
+      "raw_files": [
+        "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/data/raw/owasp_aitg_indirect_prompt_injection/AITG-APP-02_Testing_for_Indirect_Prompt_Injection.md"
+      ],
+      "records_written": 31,
+      "rows_seen": 31,
+      "source_id": "owasp_aitg_indirect_prompt_injection"
+    },
+    {
+      "notes": "Markdown source saved raw; extracted fenced/list payload-like examples when present.",
+      "raw_files": [
+        "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/data/raw/owasp_aitg_prompt_disclosure/AITG-APP-07_Testing_for_Prompt_Disclosure.md"
+      ],
+      "records_written": 23,
+      "rows_seen": 23,
+      "source_id": "owasp_aitg_prompt_disclosure"
+    },
+    {
+      "notes": "Markdown source saved raw; extracted fenced/list payload-like examples when present.",
+      "raw_files": [
+        "/Users/paperwhite/Documents/Shiba-2026/adversarial-prompt-guard/adversarial-prompt-guard/data/raw/owasp_aitg_embedding_manipulation/AITG-APP-08_Testing_for_Embedding_Manipulation.md"
+      ],
+      "records_written": 20,
+      "rows_seen": 20,
+      "source_id": "owasp_aitg_embedding_manipulation"
+    },
+    {
+      "notes": "Tracked for authenticated or full parquet processing. Public paper reports 600K+ competition prompts; row API returned 401 in this environment.",
+      "raw_files": [],
+      "records_written": 0,
+      "rows_seen": 0,
+      "source_id": "hackaprompt_dataset"
+    }
+  ],
+  "total_records": 5805
+}

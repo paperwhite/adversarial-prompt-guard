@@ -1,0 +1,10 @@
+{
+  "database_path": "data/guard/adversarial_prompt_guard.sqlite3",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "model_cache_path": ".cache/huggingface",
+  "similarity_threshold": 0.8,
+  "regex_threshold": 0.72,
+  "default_top_k": 5,
+  "batch_size": 64
+}

@@ -1,0 +1,138 @@
+{
+  "sources": [
+    {
+      "id": "advbench_harmful_behaviors",
+      "name": "AdvBench harmful behaviors",
+      "kind": "csv_url",
+      "url": "https://raw.githubusercontent.com/llm-attacks/llm-attacks/main/data/advbench/harmful_behaviors.csv",
+      "filename": "harmful_behaviors.csv",
+      "text_field": "goal",
+      "default_category": "harmful_behavior",
+      "default_attack_type": "evasion",
+      "license": "research"
+    },
+    {
+      "id": "advbench_harmful_strings",
+      "name": "AdvBench harmful strings",
+      "kind": "csv_url",
+      "url": "https://raw.githubusercontent.com/llm-attacks/llm-attacks/main/data/advbench/harmful_strings.csv",
+      "filename": "harmful_strings.csv",
+      "text_field": "target",
+      "default_category": "harmful_string",
+      "default_attack_type": "evasion",
+      "license": "research"
+    },
+    {
+      "id": "harmbench_text_all",
+      "name": "HarmBench text behavior set",
+      "kind": "csv_url",
+      "url": "https://raw.githubusercontent.com/centerforaisafety/HarmBench/main/data/behavior_datasets/harmbench_behaviors_text_all.csv",
+      "filename": "harmbench_behaviors_text_all.csv",
+      "text_field": "Behavior",
+      "category_field": "FunctionalCategory",
+      "default_category": "harmful_behavior",
+      "default_attack_type": "evasion",
+      "license": "MIT"
+    },
+    {
+      "id": "harmbench_human_jailbreaks",
+      "name": "HarmBench HumanJailbreaks",
+      "kind": "hf_rows",
+      "dataset": "mariagrandury/harmbench",
+      "splits": [
+        {
+          "config": "HumanJailbreaks",
+          "split": "val"
+        },
+        {
+          "config": "HumanJailbreaks",
+          "split": "test"
+        }
+      ],
+      "text_field": "Behavior",
+      "default_category": "human_jailbreaks",
+      "default_attack_type": "evasion",
+      "license": "MIT"
+    },
+    {
+      "id": "neuralchemy_prompt_injection_core",
+      "name": "Prompt Injection & Jailbreak Detection Dataset",
+      "kind": "hf_rows",
+      "dataset": "neuralchemy/Prompt-injection-dataset",
+      "splits": [
+        {
+          "config": "core",
+          "split": "train"
+        },
+        {
+          "config": "core",
+          "split": "validation"
+        },
+        {
+          "config": "core",
+          "split": "test"
+        }
+      ],
+      "text_field": "text",
+      "category_field": "category",
+      "severity_field": "severity",
+      "malicious_label_field": "label",
+      "malicious_label_value": 1,
+      "include_benign": true,
+      "default_category": "direct_injection",
+      "default_attack_type": "injection",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "owasp_aitg_prompt_injection",
+      "name": "OWASP AI Testing Guide: Prompt Injection",
+      "kind": "markdown_url",
+      "url": "https://raw.githubusercontent.com/OWASP/www-project-ai-testing-guide/main/Document/content/tests/AITG-APP-01_Testing_for_Prompt_Injection.md",
+      "filename": "AITG-APP-01_Testing_for_Prompt_Injection.md",
+      "default_category": "direct_injection",
+      "default_attack_type": "injection",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "owasp_aitg_indirect_prompt_injection",
+      "name": "OWASP AI Testing Guide: Indirect Prompt Injection",
+      "kind": "markdown_url",
+      "url": "https://raw.githubusercontent.com/OWASP/www-project-ai-testing-guide/main/Document/content/tests/AITG-APP-02_Testing_for_Indirect_Prompt_Injection.md",
+      "filename": "AITG-APP-02_Testing_for_Indirect_Prompt_Injection.md",
+      "default_category": "indirect_injection",
+      "default_attack_type": "poisoning_prompt",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "owasp_aitg_prompt_disclosure",
+      "name": "OWASP AI Testing Guide: Prompt Disclosure",
+      "kind": "markdown_url",
+      "url": "https://raw.githubusercontent.com/OWASP/www-project-ai-testing-guide/main/Document/content/tests/AITG-APP-07_Testing_for_Prompt_Disclosure.md",
+      "filename": "AITG-APP-07_Testing_for_Prompt_Disclosure.md",
+      "default_category": "prompt_disclosure",
+      "default_attack_type": "injection",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "owasp_aitg_embedding_manipulation",
+      "name": "OWASP AI Testing Guide: Embedding Manipulation",
+      "kind": "markdown_url",
+      "url": "https://raw.githubusercontent.com/OWASP/www-project-ai-testing-guide/main/Document/content/tests/AITG-APP-08_Testing_for_Embedding_Manipulation.md",
+      "filename": "AITG-APP-08_Testing_for_Embedding_Manipulation.md",
+      "default_category": "embedding_manipulation",
+      "default_attack_type": "poisoning_prompt",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "hackaprompt_dataset",
+      "name": "HackAPrompt public competition dataset",
+      "kind": "reference_only",
+      "url": "https://huggingface.co/datasets/hackaprompt/hackaprompt-dataset",
+      "paper_url": "https://paper.hackaprompt.com/",
+      "default_category": "prompt_hacking",
+      "default_attack_type": "injection",
+      "license": "CC-BY-4.0",
+      "notes": "Tracked for authenticated or full parquet processing. Public paper reports 600K+ competition prompts; row API returned 401 in this environment."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ruff_cache/
+
+.venv/
+.venv*/
+.cache/
+
+data/guard/*.sqlite3-shm
+data/guard/*.sqlite3-wal

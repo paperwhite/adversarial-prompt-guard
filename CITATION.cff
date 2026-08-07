@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use Adversarial Prompt Guard in research, evaluation, or derivative work, please cite it using this metadata."
+title: "Adversarial Prompt Guard"
+version: "0.1.0"
+date-released: "2026-08-07"
+authors:
+  - family-names: "Singh"
+    given-names: "Shibani"
+    email: "shibani.singh@asu.edu"
+abstract: "A provenance-aware adversarial prompt dataset, SQLite embedding database, and hybrid detection API for prompt injection and jailbreak research."
+keywords:
+  - "prompt injection"
+  - "jailbreak detection"
+  - "LLM security"
+  - "adversarial prompts"
+license: "MIT"
